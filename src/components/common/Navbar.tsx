@@ -20,7 +20,6 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const lastScrollY = useRef(0);
   const pathname = usePathname();
-  const isResumePage = pathname === "/resume";
 
   useEffect(() => {
     const handleScroll = () => {
