@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { TbHeart, TbHeartFilled } from "react-icons/tb";
-import { LuGithub, LuLinkedin, LuTwitter, LuMail } from "react-icons/lu";
+import { LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
 
 import { quentine } from "@/app/fonts";
 import { selfData } from "@/constant/";
@@ -19,9 +17,6 @@ const floatingParticles = [
 ];
 
 export const Footer = () => {
-  const [isHeartFilled, setIsHeartFilled] = useState(false);
-  const toggleHeart = () => setIsHeartFilled(!isHeartFilled);
-
   const socialLinks = [
     {
       icon: LuGithub,
@@ -111,20 +106,9 @@ export const Footer = () => {
         <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent my-4" />
 
         <div className="text-xs text-center text-muted-foreground space-y-2">
-          <p className="flex items-center justify-center gap-2">
-            Made with
-            <button onClick={toggleHeart} className="text-primary" aria-label="Toggle heart">
-              {isHeartFilled ? <TbHeartFilled /> : <TbHeart />}
-            </button>
-            by
-            <button
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="text-primary/80 hover:text-primary"
-            >
-              Aarab Nishchal
-            </button>
+          <p className="flex items-center justify-center gap-2 uppercase tracking-widest font-nasalization">
+            {selfData.name}
           </p>
-          <span>Licensed under MIT</span>
         </div>
       </div>
 

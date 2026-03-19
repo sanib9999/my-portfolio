@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "aarab.vercel.app",
+        hostname: "github.com",
         port: "",
-        pathname: "/**",
+        pathname: "/sanib9999/**",
       },
     ],
   },
@@ -71,22 +71,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/email",
-        destination: "mailto:aarab.nishchal@gmail.com",
+        destination: "mailto:sanibmohd203@gmail.com",
         permanent: true,
       },
       {
         source: "/directresume",
-        destination: "/docs/Aarab_Nishchal_Resume.pdf",
+        destination: "/docs/Mohd_Sanib_Resume.pdf",
         permanent: true,
       },
       {
         source: "/direct-resume",
-        destination: "/docs/Aarab_Nishchal_Resume.pdf",
+        destination: "/docs/Mohd_Sanib_Resume.pdf",
         permanent: true,
       },
       {
         source: "/github",
-        destination: "www.github.com/aarabii",
+        destination: "https://github.com/sanib9999",
         permanent: true,
       },
     ];

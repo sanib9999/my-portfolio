@@ -65,7 +65,6 @@ export const About = () => {
                     sizes="(max-width: 768px) 100vw, 448px"
                     className="object-cover transition-all duration-700 ease-in-out filter grayscale group-hover/image:grayscale-0 group-hover/image:scale-105"
                   />
-
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover/image:opacity-100 transition-opacity duration-700" />
                 </motion.div>
               </div>
@@ -131,10 +130,10 @@ export const About = () => {
                   <LuMapPinned className="w-6 h-6 text-primary" />
                 </div>
                 <div className="flex flex-col">
-                  <span className={`text-xs text-muted-foreground uppercase tracking-wider ${nasalization.className}`}>
+                  <span className="text-xs text-white uppercase tracking-wider font-nasalization">
                     Location
                   </span>
-                  <span className="text-sm font-medium text-foreground">
+                  <span className="text-sm font-medium text-white">
                     {selfData.current_location.city}, {selfData.current_location.state}, {selfData.current_location.country}
                   </span>
                 </div>

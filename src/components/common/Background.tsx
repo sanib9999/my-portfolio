@@ -76,9 +76,10 @@ export const Background = () => {
       {/* Background Shaders */}
       <MeshGradient
         className="absolute inset-0 w-full h-full"
-        colors={["#000000", "#8b5cf6", "#ffffff", "#1e1b4b", "#4c1d95"]}
-        speed={0.3}
+        colors={["#000000", "#C0C0C0", "#1a1a1a", "#808080", "#000000"]}
+        speed={0.2}
       />
+      
       {/* Optimized: Removed second MeshGradient layer for performance.
           The first layer provides the core visual. */}
     </div>
