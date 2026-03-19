@@ -31,8 +31,10 @@ export const selfData = {
   ],
 
   socials_username: {
-    github: "sanib9999",
-    linkedin: "mohd-sanib",
-  },
+  github: "sanib9999",
+  linkedin: "mohd-sanib",
+  twitter: "",
+  instagram: ""
+},
   mobile: "+91-9045393843",
 };
